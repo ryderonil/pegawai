@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title></title>
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="header">
+	<div id="menu">
+      <ul>
+		<li>&#187; <b>Distro User</b> </li>
+        <li><a href=?module=home>&#187; Home</a></li>
+        <li><a href='?module=user'>&#187; Manajemen User</a></li><li><a href='?module=pendaftaran'>&#187; Pendaftaran</a></li><li><a href='?module=data_jamaah'>&#187; Data Jamaah</a></li>        <li><a href=logout.php>&#187; Logout</a></li>
+      </ul>
+	    <p>&nbsp;</p>
+ 	</div>
+
+  <div id="content">
+		<h2>Pendaftaran Umrah Rawdah Silver II (19 Maret 2012 s/d 27 Maret 2012)</h2>
+	<form method=POST enctype='multipart/form-data' action=modul/mod_pendaftaran/aksi_pendaftaran.php?module=pendaftaran&act=input>
+	<input type=hidden name=id value=9>
+	<input type=hidden name=harga value='18.500'>
+	<input type=hidden name=nama_paket value='Umrah Rawdah Silver II'>
+		<table width=650 border=0>
+          <tr><td colspan=4><b><u>Data Kelengkapan Umrah</u></b></td></tr>
+		  <tr>
+    <td width=2%>1.</td>
+    <td width=17%>Paket </td>
+    <td width=2%>:</td>
+    <td>Umrah Rawdah Silver II</td>
+	</tr>
+	<tr>
+    <td width=2%>2.</td>
+    <td width=17%>Harga </td>
+    <td width=2%>:</td>
+    <td>18.500</td>
+	</tr>
+	<tr>
+    <td width=2%>3.</td>
+    <td width=17%>Waktu Perjalanan </td>
+    <td width=2%>:</td>
+    <td>19 Maret 2012 s.d 27 Maret 2012</td>
+	</tr>
+	
+          
+          <tr><td colspan=3><b><u>Data Pribadi</u></b></td><td><div align=right>No : <input type=text name='no' size=5 value='' maxlength=5></div></td></tr>
+		  <tr>
+    <td width=2%>1.</td>
+    <td width=17%>Nama Lengkap </td>
+    <td width=2%>:</td>
+    <td><input type=text name='nama_lengkap' size=77 required='required'></td>
+  </tr>
+  <tr>
+    <td>2.</td>
+    <td>Tempat / Tgl. Lahir </td>
+    <td>:</td>
+    <td><input type=text name='tempat' size=20>    Tgl <input type=text name='tgl' size=2>  Bln <select name='bln'>
+                  <option selected='selected' >--Pilih Bulan--</option>
+                  <option value=Januari>Januari</option>
+				  <option value=Februari>Februari</option>
+				  <option value=Februari>Maret</option>
+				  <option value=Februari>April</option>
+				  <option value=Februari>Mei</option>
+				  <option value=Februari>Juni</option>
+				  <option value=Februari>Juli</option>
+				  <option value=Februari>Agustus</option>
+				  <option value=Februari>September</option>
+				  <option value=Februari>Oktober</option>
+				  <option value=Februari>November</option>
+				  <option value=Februari>Desember</option>
+                  </select>
+				  Tahun <input type=text name='thn' size=5> </td>
+  </tr>
+  <tr>
+    <td>3.</td>
+    <td>Nomor KTP </td>
+    <td>:</td>
+    <td><input type=text name='no_ktp' size=77></td>
+  </tr>
+  <tr>
+    <td>4.</td>
+    <td>Alamat Sesuai KTP </td>
+    <td>:</td>
+    <td><input type=text name='alamat_ktp' size=77></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>No <input type=text name='no_alamat' size=2>  Rt. <input type=text name='rt' size=2>  Rw. <input type=text name='rw' size=2></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>Desa / Kelurahan </td>
+    <td>:</td>
+    <td><input type=text name='desa' size=77></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>Kecamatan</td>
+    <td>:</td>
+    <td><input type=text name='kecamatan' size=77></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>Kabupaten / Kodya </td>
+    <td>:</td>
+    <td><input type=text name='kabupaten' size=77></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>Propinsi</td>
+    <td>:</td>
+    <td><input type=text name='propinsi' size=77></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>Kode Pos </td>
+    <td>:</td>
+    <td><input type=text name='kode_pos' size=5></td>
+  </tr>
+  <tr>
+    <td>5.</td>
+    <td>Nomor Paspor </td>
+    <td>:</td>
+    <td><input type=text name='no_paspor_awal' size=2> <input type=text name='no_paspor_akhir' size=10></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>Tempat dikeluarkan </td>
+    <td>:</td>
+    <td><input type=text name='tempat_dikeluarkan' size=77></td>
+  </tr>
+  <tr>
+    <td>6.</td>
+    <td>Alamat Rumah </td>
+    <td>:</td>
+    <td><textarea  name='alamat_rumah' cols=74></textarea></td>
+  </tr>
+  <tr>
+    <td>7.</td>
+    <td>Kode Pos </td>
+    <td>:</td>
+    <td><input type=text name='kode_pos_rumah' size=5></td>
+  </tr>
+  <tr>
+    <td>8.</td>
+    <td>Telpon</td>
+    <td>:</td>
+    <td><input type=text name='telpon_kode' size=5> <input type=text name='telpon' size=10> Hp. <input type=text name='hp' size=20></td>
+  </tr>
+  <tr>
+    <td>9.</td>
+    <td>Pendidikan Terakhir </td>
+    <td>:</td>
+    <td><table width=500><tr><td><input name='pendidikan' type='radio' value='01. SD'/>01. SD </td>
+					<td><input name='pendidikan' type='radio' value='02. SMP'/>02. SMP</td>
+					<td><input name='pendidikan' type='radio' value='03. SMU'/>03. SMU</td>
+					<td><input name='pendidikan' type='radio' value='04. Diploma'/>04. Diploma</td>
+					<td><input name='pendidikan' type='radio' value='05. Sarjana S1/S2/S3'/>05. Sarjana S1/S2/S3</td>
+					</tr></table></td>
+  </tr>
+  <tr>
+    <td>10.</td>
+    <td>Pekerjaan</td>
+    <td>:</td>
+    <td><table width=500><tr><td><input name='pekerjaan' type='radio' value='01. Peg. Negeri/Swasta/BUMN'/>01. Peg. Negeri/Swasta/BUMN </td>
+					<td><input name='pekerjaan' type='radio' value='02. TNI/Polri'/>02. TNI/Polri</td>
+					<td><input name='pekerjaan' type='radio' value='03. Wiraswasta/Dagang'/>03. Wiraswasta/Dagang</td></tr>
+					<tr>
+					<td><input name='pekerjaan' type='radio' value='04. Pensiunan/Purnawirawan'/>04. Pensiunan/Purnawirawan </td>
+					<td><input name='pekerjaan' type='radio' value='05. Ibu Rumah Tangga'/>05. Ibu Rumah Tangga</td>
+					<tr>
+					<td><input name='pekerjaan' type='radio' value='06. Pelajar/Mahasiswa'/>06. Pelajar/Mahasiswa </td>
+					<td colspan=2><input name='pekerjaan' type='radio' value='07. Lainnya'/>07. Lainnya <input type=text name='pekerjaan_lain' size=20 ></td>
+					</table></td>
+  </tr>
+   <tr><td>12.</td><td>Pembayaran</td><td>:</td><td><input type=text name='pembayaran' size=40> melalui : <input type=text name='keterangan' size=40><br><br></td></tr>
+  <tr><td></td><td align=right><input type=button value=Batal onclick=self.history.back()></td><td></td><td><input type=submit value=Simpan></td></tr>
+          </table></form>  </div>
+  
+		<div id="footer" align=center>
+			Copyright &copy; 2010 by BPW Al-Utsmaniyah Tours. All rights reserved.
+		</div>
+</div>
+</body>
+</html>
