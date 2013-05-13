@@ -69,6 +69,10 @@ class Umum_model extends CI_Model {
     	$this->db->where('id_kl', $klnya);
 		return $this->db->get('jamaah');
     }
+	function get_jamaah_bayar($id){
+    	$this->db->where('id_jamaah', $id);
+		return $this->db->get('jamaah');
+    }
     //---------------------download excel----------------------------
     function ex_semua_jamaah(){
     	$this->db->select('*');

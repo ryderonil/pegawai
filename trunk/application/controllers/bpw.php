@@ -48,6 +48,7 @@ class Bpw extends  CI_Controller{
 	function isi_pendaftaran($id,$harga){
 		$nilai['isi'] = 'bpw/form_pendaftaran';
 		$nilai['harga'] = $harga;
+		
 		$nilai['hasilnya'] = $this->admin_model->get_paket_edit($id);
 		$nilai['klnya'] = $this->admin_model->get_kl_daftar();
 		$this->load->view('bpw/index', $nilai);
@@ -123,8 +124,11 @@ class Bpw extends  CI_Controller{
 			'baju' => $baju,
 		
 		);
+		
 		$this->admin_model->save_jamaah($data);
-		redirect('bpw/pendaftaran');
+		
+		$result = $this->admin_model->listbayar($data);
+		redirect('umum/bayar/'.$result[0]->id_jamaah);
 	}
 	function paket(){
 		$data="";

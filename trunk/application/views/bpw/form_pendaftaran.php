@@ -68,18 +68,18 @@ echo $hasilnya->row()->nama_paket.' ( '.$hasilnya->row()->jadwal_awal.' s/d '.$h
     <td>&nbsp;</td>
     <td>Bin / Binti </td>
     <td>:</td>
-    <td><input type=text required="required" name='bin' size=48> <input name='kel' type='radio' value='M'/>Laki - laki
-    <input name='kel' required="required" type='radio' value='F'/>Perempuan
+    <td><input type=text  name='bin' size=48> <input name='kel' type='radio' value='M'/>Laki - laki
+    <input name='kel'  type='radio' value='F'/>Perempuan
      </td>
   </tr>
   <tr>
     <td>2.</td>
     <td>Tempat / Tgl. Lahir </td>
     <td>:</td>
-    <td><input type=text required="required" name='tempat' size=20>    Tgl 
+    <td><input type=text name='tempat' size=20>    Tgl 
     
-    <input required="required" maxlength="2" type=text name='tgl' size=2>  Bln 
-    <select required="required" name='bln'>
+    <input  maxlength="2" type=text name='tgl' size=2>  Bln 
+    <select name='bln'>
                   <option value="" selected='selected' >--Pilih Bulan--</option>
                   <option value=Januari>Januari</option>
 				  <option value=Februari>Februari</option>
@@ -100,7 +100,7 @@ echo $hasilnya->row()->nama_paket.' ( '.$hasilnya->row()->jadwal_awal.' s/d '.$h
     <td>3.</td>
     <td>Nomor KTP </td>
     <td>:</td>
-    <td><input required="required" type=text name='no_ktp' size=77></td>
+    <td><input type=text name='no_ktp' size=77></td>
   </tr>
   <tr>
     <td>4.</td>

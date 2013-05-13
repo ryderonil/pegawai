@@ -233,4 +233,10 @@ class Admin_model extends CI_Model {
     	$data=$this->db->query("select * from kl");
 	return $data;
     }
+    function listbayar($filter = NULL, $limit = NULL, $offset = NULL){
+    	 
+    	$this->db->order_by('id_jamaah', 'desc');
+    	 return $this->db->get('jamaah', $limit, $offset)->result();
+    }
+    
 }
