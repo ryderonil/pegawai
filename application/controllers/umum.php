@@ -701,6 +701,21 @@ class Umum extends  CI_Controller{
 		else {
 		$this->load->view('admin/index', $nilai);}
 	}
+	function bayar($id){
+		
+		//$nilai['hasilnya'] = $this->umum_model->get_detail_jamaah($id);
+		$nilai['isi'] = 'umum/bayar';
+		$nilai['hasilnya'] = $this->umum_model->get_jamaah_bayar($id);
+		
+		if(from_session('level') == 'bpw'){
+		$this->load->view('bpw/index', $nilai);
+		}
+		elseif(from_session('level') == 'kl'){
+			$this->load->view('kl/index', $nilai);
+		}
+		else {
+		$this->load->view('admin/index', $nilai);}
+	}
 	//-----------------download excel------------------------------
 	function ex_semua_jamaah(){
 		$data['hasilnya']=$this->umum_model->ex_semua_jamaah();
